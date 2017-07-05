@@ -1,0 +1,38 @@
+/* 
+  Localizable.strings
+  YRYZ
+
+  Created by weishibo on 16/7/5.
+  Copyright © 2016年 yryz. All rights reserved.
+*/
+
+
+
+//public(公共)
+
+"public.hud.neterror" = "网络有点问题";
+"public.hud.loding" = "加载中";
+
+
+//tabbar
+"tabbar.button.homepage" = "首页";
+"tabbar.button.message" = "消息";
+"tabbar.button.show" = "晒";
+"tabbar.button.find" = "发现";
+"tabbar.button.mine" = "我的";
+
+//home
+
+
+
+
+//login
+"login.placeholder.phone" = "手机号";
+"login.placeholder.password" = "请输入密码";
+"login.button.register" = "注册";
+"login.button.forgotPassword" = "忘记密码";
+"login.label.fastLogin" = "使用第三方账号登录";
+"login.button.QQ" = "腾讯QQ";
+"login.button.weChat" = "微信账号";
+"login.button.sina" = "新浪微博";
+"login.button.login" = "登录";

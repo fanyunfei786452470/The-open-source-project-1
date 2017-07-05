@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="KGk-i7-Jjw" customClass="RRZAdListBlackListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vx0-tO-kQF">
+                        <rect key="frame" x="10" y="11" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="eIv-Iw-bJW"/>
+                            <constraint firstAttribute="width" constant="35" id="y1g-81-ZVX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8E-6I-7X9">
+                        <rect key="frame" x="55" y="11" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZz-4X-0rC">
+                        <rect key="frame" x="55" y="46" width="180" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpt-UF-6dj">
+                        <rect key="frame" x="235" y="19" width="80" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="ePx-RB-C0s"/>
+                            <constraint firstAttribute="height" constant="20" id="zd6-f8-OhP"/>
+                        </constraints>
+                        <state key="normal" title="移出黑名单"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="N8E-6I-7X9" firstAttribute="leading" secondItem="Vx0-tO-kQF" secondAttribute="trailing" constant="10" id="4Bt-VH-sJW"/>
+                    <constraint firstItem="Vx0-tO-kQF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="JAV-zz-k5M"/>
+                    <constraint firstItem="gZz-4X-0rC" firstAttribute="bottom" secondItem="Vx0-tO-kQF" secondAttribute="bottom" id="TC4-hq-hUH"/>
+                    <constraint firstItem="vpt-UF-6dj" firstAttribute="centerY" secondItem="Vx0-tO-kQF" secondAttribute="centerY" id="WS8-qg-xbE"/>
+                    <constraint firstItem="gZz-4X-0rC" firstAttribute="leading" secondItem="N8E-6I-7X9" secondAttribute="leading" id="cSo-s1-g6k"/>
+                    <constraint firstAttribute="trailing" secondItem="gZz-4X-0rC" secondAttribute="trailing" constant="85" id="gE4-dk-txb"/>
+                    <constraint firstAttribute="trailing" secondItem="vpt-UF-6dj" secondAttribute="trailing" constant="5" id="jMr-OC-1gP"/>
+                    <constraint firstItem="N8E-6I-7X9" firstAttribute="top" secondItem="Vx0-tO-kQF" secondAttribute="top" id="kn3-WB-0gs"/>
+                    <constraint firstItem="Vx0-tO-kQF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="sT1-2t-cYI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="Vx0-tO-kQF" id="Rbz-89-LSA"/>
+                <outlet property="nameLabel" destination="N8E-6I-7X9" id="i50-eE-bNH"/>
+                <outlet property="rightBtn" destination="vpt-UF-6dj" id="kAY-4L-QEP"/>
+                <outlet property="subLabel" destination="gZz-4X-0rC" id="8oS-yF-Udq"/>
+            </connections>
+            <point key="canvasLocation" x="356" y="366"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,86 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - AliyunOSSiOS (2.5.0)
+  - Bugly (2.4.0)
+  - DZNEmptyDataSet (1.8.1)
+  - JFImagePicker (1.0.0)
+  - Masonry (1.0.1)
+  - MBProgressHUD (1.0.0)
+  - MJExtension (3.0.11)
+  - MJRefresh (2.4.12)
+  - Onboard (2.3.0)
+  - QBImagePickerController (3.4.0)
+  - QRCodeReaderViewController (4.0.1)
+  - Reachability (3.2)
+  - ReactiveCocoa (2.3.1):
+    - ReactiveCocoa/UI (= 2.3.1)
+  - ReactiveCocoa/Core (2.3.1):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.3.1)
+  - ReactiveCocoa/UI (2.3.1):
+    - ReactiveCocoa/Core
+  - TYAttributedLabel (2.6.1)
+  - UMengAnalytics (4.1.0)
+  - YYKit (1.0.7):
+    - YYKit/no-arc (= 1.0.7)
+  - YYKit/no-arc (1.0.7)
+  - ZFPlayer (1.2.1):
+    - Masonry
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - AliyunOSSiOS (~> 2.5.0)
+  - Bugly (~> 2.4.0)
+  - DZNEmptyDataSet (~> 1.8.1)
+  - JFImagePicker
+  - Masonry (~> 1.0.1)
+  - MBProgressHUD (~> 1.0.0)
+  - MJExtension (~> 3.0.10)
+  - MJRefresh (~> 2.4.10)
+  - Onboard (~> 2.3.0)
+  - QBImagePickerController (~> 3.4.0)
+  - QRCodeReaderViewController (~> 4.0.1)
+  - Reachability (~> 3.2)
+  - ReactiveCocoa (~> 2.3.1)
+  - TYAttributedLabel (~> 2.6.1)
+  - UMengAnalytics (~> 4.1.0)
+  - YYKit (~> 1.0.7)
+  - ZFPlayer (~> 1.2.1)
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AliyunOSSiOS: 0c275ccd87b0b1fb82f3f8abe1aa1568a17b19d7
+  Bugly: 3b56d8365c5687f74fd6fbb50c5b7ede3cdac96c
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  JFImagePicker: 2914c69dac80767a98664e768ac50118664e9f04
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJExtension: f9ae6ddc0f1c482c3c9af750280ccebd14381958
+  MJRefresh: ca8e9589895977df32d379d46e6b8a5450b3ff44
+  Onboard: 7f41c4a92e66d53844438434b1e7f892d363e55b
+  QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
+  QRCodeReaderViewController: 6538745c8f4ffa9407a26bd7f9489ea01739e7b0
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  ReactiveCocoa: 3fe9b233ca6db810e86681b5749488564c1179a1
+  TYAttributedLabel: 4785820dc8d7935446f49f1de4daa0f99ebcba8a
+  UMengAnalytics: 19b28253793d77dff10fb7d502faad1fb6b8ce4a
+  YYKit: 843d1b26e20b82c695790c9a89907eaa1e99907f
+  ZFPlayer: 80cf92fef7412ff7a31e47c6658c50393351f938
+
+PODFILE CHECKSUM: a2f8b9920fe347abc417badab755a9f6c0784a4a
+
+COCOAPODS: 1.0.1

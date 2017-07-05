@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="workCell" rowHeight="111" id="KGk-i7-Jjw" customClass="YRSearchWorksCell">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="371" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zee-CD-hax">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="bMs-p5-oeT"/>
+                            <constraint firstAttribute="width" constant="50" id="k1A-kO-3yx"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygf-NL-xpM">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tuw-9t-wNp">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="1eN-WJ-B75"/>
+                            <constraint firstAttribute="width" constant="25" id="cTt-jA-YjT"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ygf-NL-xpM" secondAttribute="trailing" constant="10" id="ALi-4q-4h4"/>
+                    <constraint firstItem="Tuw-9t-wNp" firstAttribute="centerY" secondItem="zee-CD-hax" secondAttribute="centerY" id="C6O-aO-dYW"/>
+                    <constraint firstItem="ygf-NL-xpM" firstAttribute="top" secondItem="zee-CD-hax" secondAttribute="top" id="FhW-wo-fmP"/>
+                    <constraint firstItem="zee-CD-hax" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Ssz-rE-Yzz"/>
+                    <constraint firstItem="zee-CD-hax" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="a8T-YK-Ld1"/>
+                    <constraint firstItem="ygf-NL-xpM" firstAttribute="leading" secondItem="zee-CD-hax" secondAttribute="trailing" constant="10" id="fm5-Q7-giO"/>
+                    <constraint firstItem="Tuw-9t-wNp" firstAttribute="centerX" secondItem="zee-CD-hax" secondAttribute="centerX" id="n3q-N1-Uot"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgImage" destination="zee-CD-hax" id="zVo-Fu-RQ6"/>
+                <outlet property="title" destination="ygf-NL-xpM" id="RHs-Qs-CL9"/>
+                <outlet property="typeImage" destination="Tuw-9t-wNp" id="BBp-DT-fWU"/>
+            </connections>
+            <point key="canvasLocation" x="1.5" y="140.5"/>
+        </tableViewCell>
+    </objects>
+</document>

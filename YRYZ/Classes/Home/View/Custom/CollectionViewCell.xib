@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCell" id="gTV-IL-0wX" customClass="CollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="147" height="141"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="147" height="141"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tpx-w1-gAO">
+                        <rect key="frame" x="51" y="48" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="YjG-3Z-F84"/>
+                            <constraint firstAttribute="height" constant="45" id="fmc-NT-gxe"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foG-g5-v6F">
+                        <rect key="frame" x="0.0" y="93" width="147" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="S6X-JE-Xg9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="foG-g5-v6F" firstAttribute="top" secondItem="Tpx-w1-gAO" secondAttribute="bottom" id="7ab-53-ehF"/>
+                <constraint firstAttribute="trailing" secondItem="foG-g5-v6F" secondAttribute="trailing" id="H63-Z6-PVO"/>
+                <constraint firstItem="Tpx-w1-gAO" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Osc-z5-w2m"/>
+                <constraint firstItem="foG-g5-v6F" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lmC-uC-AMK"/>
+                <constraint firstItem="Tpx-w1-gAO" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="zQs-fz-t9H"/>
+            </constraints>
+            <size key="customSize" width="147" height="141"/>
+            <connections>
+                <outlet property="icon" destination="Tpx-w1-gAO" id="NkP-dc-Rvg"/>
+                <outlet property="title" destination="foG-g5-v6F" id="NHj-gg-0Pk"/>
+            </connections>
+            <point key="canvasLocation" x="353.5" y="226.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

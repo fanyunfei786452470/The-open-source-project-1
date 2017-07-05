@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="84" id="KGk-i7-Jjw" customClass="YRMineTopCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="88.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yr_user_defaut" translatesAutoresizingMaskIntoConstraints="NO" id="32m-h2-sps">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="65" id="CdN-RT-sPT"/>
+                            <constraint firstAttribute="height" constant="65" id="i8N-zh-Jyf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDf-jP-iZN">
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yr_QRCode" translatesAutoresizingMaskIntoConstraints="NO" id="EKi-HS-VUx">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="9aV-yH-QsH"/>
+                            <constraint firstAttribute="width" constant="22" id="ekM-aD-gNH"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yr_msg_access" translatesAutoresizingMaskIntoConstraints="NO" id="AAU-YR-nzc">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="adV-kG-4LI"/>
+                            <constraint firstAttribute="height" constant="15" id="mBi-db-8nc"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="AAU-YR-nzc" secondAttribute="trailing" constant="10" id="5E1-G9-aXh"/>
+                    <constraint firstItem="KDf-jP-iZN" firstAttribute="centerY" secondItem="32m-h2-sps" secondAttribute="centerY" id="E5B-pz-3qw"/>
+                    <constraint firstItem="32m-h2-sps" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="KbL-B0-CWM"/>
+                    <constraint firstItem="EKi-HS-VUx" firstAttribute="centerY" secondItem="32m-h2-sps" secondAttribute="centerY" id="KhH-4X-Iof"/>
+                    <constraint firstItem="AAU-YR-nzc" firstAttribute="centerY" secondItem="EKi-HS-VUx" secondAttribute="centerY" id="Vht-4n-yMp"/>
+                    <constraint firstAttribute="trailing" secondItem="EKi-HS-VUx" secondAttribute="trailing" constant="30" id="cg0-hh-yfu"/>
+                    <constraint firstItem="KDf-jP-iZN" firstAttribute="leading" secondItem="32m-h2-sps" secondAttribute="trailing" constant="20" id="iwg-Qa-cv4"/>
+                    <constraint firstItem="32m-h2-sps" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="q9u-bS-F6U"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="QRCodeImageView" destination="EKi-HS-VUx" id="W6F-dz-sEW"/>
+                <outlet property="iconImageView" destination="32m-h2-sps" id="BJ7-tp-z2Z"/>
+                <outlet property="nameLabel" destination="KDf-jP-iZN" id="WvH-q4-FpM"/>
+            </connections>
+            <point key="canvasLocation" x="-97" y="30"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="yr_QRCode" width="21" height="21"/>
+        <image name="yr_msg_access" width="9" height="15"/>
+        <image name="yr_user_defaut" width="36" height="36"/>
+    </resources>
+</document>

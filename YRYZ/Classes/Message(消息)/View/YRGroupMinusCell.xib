@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="YRGroupMinusCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yr_msg_headImg" translatesAutoresizingMaskIntoConstraints="NO" id="AU1-Hf-yhv">
+                        <rect key="frame" x="10" y="10" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="J2e-o2-byI"/>
+                            <constraint firstAttribute="height" constant="36" id="pfF-4q-pgL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="安静" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ui-ZY-WfY">
+                        <rect key="frame" x="51" y="17" width="34" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AU1-Hf-yhv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="2Kl-gy-rDo"/>
+                    <constraint firstItem="AU1-Hf-yhv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="JsM-rA-JgL"/>
+                    <constraint firstItem="6Ui-ZY-WfY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="u4L-nW-N2q"/>
+                    <constraint firstItem="6Ui-ZY-WfY" firstAttribute="leading" secondItem="AU1-Hf-yhv" secondAttribute="trailing" constant="5" id="yGQ-qh-tQy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headImg" destination="AU1-Hf-yhv" id="tvH-Ev-ADm"/>
+                <outlet property="nameLab" destination="6Ui-ZY-WfY" id="kAq-29-X66"/>
+            </connections>
+            <point key="canvasLocation" x="360" y="421.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="yr_msg_headImg" width="36" height="36"/>
+    </resources>
+</document>

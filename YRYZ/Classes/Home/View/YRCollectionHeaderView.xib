@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeadView" id="U6b-Vx-4bR" customClass="YRCollectionHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="82"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="2ZM-gG-tLB">
+                    <rect key="frame" x="0.0" y="0.0" width="397" height="82"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2ZM-gG-tLB" secondAttribute="trailing" id="QX8-41-MIk"/>
+                <constraint firstItem="2ZM-gG-tLB" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="jna-gp-hyy"/>
+                <constraint firstAttribute="bottom" secondItem="2ZM-gG-tLB" secondAttribute="bottom" id="kfY-EY-04v"/>
+                <constraint firstItem="2ZM-gG-tLB" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="v6u-ZG-oK6"/>
+            </constraints>
+            <connections>
+                <outlet property="search" destination="2ZM-gG-tLB" id="di3-yT-a0M"/>
+            </connections>
+            <point key="canvasLocation" x="408.5" y="306"/>
+        </collectionReusableView>
+    </objects>
+</document>

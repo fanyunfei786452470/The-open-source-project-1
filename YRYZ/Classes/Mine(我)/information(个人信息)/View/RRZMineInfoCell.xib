@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="48" id="KGk-i7-Jjw" customClass="RRZMineInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="47"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的二维码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNN-bs-hoO">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="H7G-lK-id9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yr_msg_access" translatesAutoresizingMaskIntoConstraints="NO" id="jTD-Ty-3NK">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="90v-ip-WEj"/>
+                            <constraint firstAttribute="width" constant="8" id="Mxs-jx-38q"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y4q-VH-syo">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="GKW-JD-p9q"/>
+                            <constraint firstAttribute="width" constant="20" id="pXZ-9M-ZaN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDw-4Q-vV6">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="y4q-VH-syo" firstAttribute="centerY" secondItem="jTD-Ty-3NK" secondAttribute="centerY" id="6yT-HL-F9O"/>
+                    <constraint firstItem="XDw-4Q-vV6" firstAttribute="leading" secondItem="ZNN-bs-hoO" secondAttribute="trailing" constant="10" id="Aef-7s-3GC"/>
+                    <constraint firstItem="ZNN-bs-hoO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="D6c-gf-goa"/>
+                    <constraint firstItem="ZNN-bs-hoO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="PnK-C1-8Nh"/>
+                    <constraint firstItem="XDw-4Q-vV6" firstAttribute="centerY" secondItem="jTD-Ty-3NK" secondAttribute="centerY" id="WNZ-cj-YvJ"/>
+                    <constraint firstAttribute="trailing" secondItem="jTD-Ty-3NK" secondAttribute="trailing" constant="10" id="ZFo-B3-xm6"/>
+                    <constraint firstItem="jTD-Ty-3NK" firstAttribute="leading" secondItem="y4q-VH-syo" secondAttribute="trailing" constant="10" id="edH-i6-WTq"/>
+                    <constraint firstItem="jTD-Ty-3NK" firstAttribute="leading" secondItem="XDw-4Q-vV6" secondAttribute="trailing" constant="10" id="fYa-YL-J4u"/>
+                    <constraint firstItem="XDw-4Q-vV6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="oDn-De-HLk"/>
+                    <constraint firstAttribute="bottom" secondItem="XDw-4Q-vV6" secondAttribute="bottom" constant="5" id="oP3-ug-6UK"/>
+                    <constraint firstItem="jTD-Ty-3NK" firstAttribute="centerY" secondItem="ZNN-bs-hoO" secondAttribute="centerY" id="rvP-4M-sbM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="IconImageView" destination="y4q-VH-syo" id="Nnq-VG-y7s"/>
+                <outlet property="imageHCons" destination="GKW-JD-p9q" id="EPi-vq-ZDR"/>
+                <outlet property="imageWCons" destination="pXZ-9M-ZaN" id="keN-lb-j0y"/>
+                <outlet property="subTitleLabel" destination="XDw-4Q-vV6" id="y9a-Fg-ouO"/>
+                <outlet property="titleLabel" destination="ZNN-bs-hoO" id="CdN-AV-LrZ"/>
+            </connections>
+            <point key="canvasLocation" x="261" y="277"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="yr_msg_access" width="9" height="15"/>
+    </resources>
+</document>

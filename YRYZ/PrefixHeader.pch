@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  YRYZ
+//
+//  Created by 易超 on 16/6/30.
+//  Copyright © 2016年 yryz. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "AppImportConstants.h"
+#import "APIConstant.h"
+#import "WebString.h"
+
+#import "YRModelManager.h"
+
+#endif
+#endif

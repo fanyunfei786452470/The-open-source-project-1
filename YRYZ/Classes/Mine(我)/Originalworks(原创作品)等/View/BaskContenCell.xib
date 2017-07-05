@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="textCell" id="KGk-i7-Jjw" customClass="BaskContenCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNa-ly-Qh1">
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="坚持就是胜利坚持就是胜利坚持就是胜" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHy-5M-dk8">
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FHy-5M-dk8" secondAttribute="trailing" constant="10" id="4Q2-sF-IWh"/>
+                            <constraint firstItem="FHy-5M-dk8" firstAttribute="leading" secondItem="dNa-ly-Qh1" secondAttribute="leading" constant="10" id="Ktg-zy-19q"/>
+                            <constraint firstItem="FHy-5M-dk8" firstAttribute="top" secondItem="dNa-ly-Qh1" secondAttribute="top" id="con-c1-7pF"/>
+                            <constraint firstAttribute="bottom" secondItem="FHy-5M-dk8" secondAttribute="bottom" id="wvA-3r-cwz"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今天" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVJ-iQ-8AW">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="CC3-Ne-1ro"/>
+                            <constraint firstAttribute="height" constant="45" id="PHx-00-hwt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sVJ-iQ-8AW" firstAttribute="top" secondItem="FHy-5M-dk8" secondAttribute="top" id="2Bw-Oh-Iye"/>
+                    <constraint firstItem="dNa-ly-Qh1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="80" id="Hmp-do-nI3"/>
+                    <constraint firstAttribute="trailing" secondItem="dNa-ly-Qh1" secondAttribute="trailing" constant="10" id="RwW-Vn-HJc"/>
+                    <constraint firstItem="sVJ-iQ-8AW" firstAttribute="top" secondItem="FHy-5M-dk8" secondAttribute="top" id="VFP-GB-JsK"/>
+                    <constraint firstItem="dNa-ly-Qh1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Xgn-JZ-QO7"/>
+                    <constraint firstAttribute="bottom" secondItem="dNa-ly-Qh1" secondAttribute="bottom" id="jFE-iQ-yLK"/>
+                    <constraint firstItem="sVJ-iQ-8AW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="p8f-aA-mz0"/>
+                    <constraint firstItem="sVJ-iQ-8AW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="uld-Sa-1i8"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="VFP-GB-JsK"/>
+                        <exclude reference="uld-Sa-1i8"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLab" destination="FHy-5M-dk8" id="Mdz-0E-aca"/>
+                <outlet property="timeLab" destination="sVJ-iQ-8AW" id="SLO-WE-Bjf"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

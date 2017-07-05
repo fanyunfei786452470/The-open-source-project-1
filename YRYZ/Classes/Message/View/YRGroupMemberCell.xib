@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="YRGroupMemberCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="56.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLx-Bh-OpY">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="3LX-ji-D9c"/>
+                            <constraint firstAttribute="width" constant="22" id="tw2-OV-2UP"/>
+                        </constraints>
+                        <state key="normal" image="yr_msg_noseleted"/>
+                        <state key="selected" image="yr_choose_yes"/>
+                        <connections>
+                            <action selector="seleteButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vzu-7D-ZiP"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yr_msg_headImg" translatesAutoresizingMaskIntoConstraints="NO" id="taN-IC-z0X">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="KEt-a1-6YY"/>
+                            <constraint firstAttribute="width" constant="36" id="b1h-tx-v0a"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="安静" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lga-dg-wY2">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wLx-Bh-OpY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="1DR-SX-8n8"/>
+                    <constraint firstItem="Lga-dg-wY2" firstAttribute="leading" secondItem="taN-IC-z0X" secondAttribute="trailing" constant="6" id="53x-P8-A8B"/>
+                    <constraint firstItem="taN-IC-z0X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="S7M-mj-5L3"/>
+                    <constraint firstItem="taN-IC-z0X" firstAttribute="leading" secondItem="wLx-Bh-OpY" secondAttribute="trailing" constant="10" id="guV-WI-oCD"/>
+                    <constraint firstItem="wLx-Bh-OpY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="htj-V4-t4c"/>
+                    <constraint firstItem="Lga-dg-wY2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oNF-0B-r20"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headerImg" destination="taN-IC-z0X" id="h03-uq-KnT"/>
+                <outlet property="nameLab" destination="Lga-dg-wY2" id="4QW-OZ-8oD"/>
+                <outlet property="seleteBtn" destination="wLx-Bh-OpY" id="5cB-tj-MWS"/>
+            </connections>
+            <point key="canvasLocation" x="187" y="368.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="yr_choose_yes" width="22" height="22"/>
+        <image name="yr_msg_headImg" width="36" height="36"/>
+        <image name="yr_msg_noseleted" width="22" height="22"/>
+    </resources>
+</document>
